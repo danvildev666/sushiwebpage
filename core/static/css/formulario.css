@@ -1,0 +1,44 @@
+body{
+    background: linear-gradient(130deg,#006699,#33cccc);
+    background-size: 100vw 100vh;
+}
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    margin-top: 100px;
+    border-radius: 7px;
+}
+h2{
+    color:#fff;
+    text-align: center;
+    margin: 0;
+    font-family: berlin sans fb;
+    font-weight: 100;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+button,textarea,a,input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+}
+textarea{
+    min-height: 130px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton{
+    background-color: #31384a;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px;
+}
+#boton:hover{
+    border: 1px solid #fffa;
+    cursor: pointer;
+}
+

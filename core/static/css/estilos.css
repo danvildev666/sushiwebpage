@@ -1,0 +1,479 @@
+*{ margin: 0;
+    box-sizing: border-box;
+    }
+    body{ font-family: sans-serif;
+    }
+     .comida__img{
+        max-width: 85%;
+    }
+    .logo{
+        width: 155px;
+        height: 50px;
+    }
+    .contenedor{
+       margin: 100%;
+        margin: auto;
+    }
+    /*-----------------header---------------------------*/
+    .header{
+        background: #fff;
+    }
+    .header .contenedor{
+        display: flex;
+         justify-content: space-between;
+    }
+    .logo,.icon-menu{
+        margin: 5px;
+        color: rgb(3, 48, 66);
+    }
+    .icon-menu{
+        display: block;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 45px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .nav{ 
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        transition: all 0.5s;
+        width: 100%;
+        z-index: 100;
+    }
+    .menu{
+        list-style: none;
+        padding: 0;
+        margin: 0;  
+    }
+    .menu__link{
+         cursor: pointer; display: block;
+        padding: 15px;
+        background: white ;
+        color: rgb(3, 19, 26) ;
+        height: 60px;
+        border-bottom: 1px solid rgb(6, 23, 34);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .menu__link:hover{
+        background: rgb(4, 23, 31)  ;
+        color: #fff;
+    }
+    .muestrate{
+        left: 0;
+    }
+    main .quienes{
+        background: #f0f3f5;
+        padding:60px 0;
+    }
+    
+    main .quienes .quienes-titulo{
+        color:#000;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom:20px;
+    }
+    
+    main .quienes .quienes-parrafo{
+        text-align: center;
+        color:#999999;
+        font-weight: 600;
+    }
+    /*---------- Estilos del  Mapa----------*/
+    .mapa {
+        padding: 15px ;
+        background: #262626;
+        text-align: center;
+    }
+    .mapa h3{
+        font-size: 25px;
+    }
+    .mapa p{
+        text-align: justify;
+        
+    }
+    
+    /*-----------------estilos del comida--------------*/
+    .comida__titulo{
+        font-size: 40px;
+        text-align: center;
+        
+        margin-top: 20px;
+    }
+    .comida__txt{
+        font-size: 20px;
+        text-align: justify;
+        padding: 15px;
+        margin-top: 20px;
+        right: 30px;
+        left: 30px;
+    }
+    .comida__img{
+      width: 100%;
+     border-radius: 50%;
+     margin: 24px;
+     
+    }
+    .comida__columna{
+         position: relative;
+    }
+    .comida__columna h3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%)translateY(-50%);
+        color: #fff;
+        font-size: 32px;
+        font-weight:900;
+    }
+    
+    .comida .contenedor{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+     .comida__columna:hover .comida__img {
+          box-shadow:  0 0 0 8px #fff,
+            0 15px 200px;
+    transform:scale(1.1);
+    }
+    
+    /*-----------------estilos de especial--------------*/
+    .especial{
+        background: rgb(3, 48, 66);
+        text-align: center; color: #fff;
+    }
+    .programas__titulo{
+        font-size: 30px;
+          padding: 25px;
+    }
+    .especial__img{
+       width: 100%;  
+    }
+    .informacion{
+        margin-top: -6px;
+        background: rgb(243, 239, 239);
+        color: #000;
+    }
+    .especial__titulo{
+        font-size: 25px;
+        padding: 5px;
+    }
+    .especial__txt{
+       padding: 25px;
+        text-align: justify;
+    }
+    .button{
+        padding: 15px;
+        margin: 15px;
+        font-size: 20px;
+      background: #000405;
+        border: 0;
+         cursor: pointer;
+         color: white;
+        font-weight: bold;
+    }
+    .button:hover {
+              box-shadow: 0 0px 15px 3px rgba(5, 35, 44, 0.9);  
+    }
+    .especial__columna1,.especial__columna2,.especial__columna3{
+     margin: 15px; 
+    }
+    .especial .contenedor{
+         display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    }
+    
+    
+    
+    
+    /*---------------Estilos Responsive------------------*/
+    @media(min-width:480px){
+           .banner__descripcion {
+           top: 32%;    
+            width: 80%;
+            padding: 8px; 
+    }
+     .banner__descripcion p{
+            display: block;
+            font-size: 17px;
+    }
+        .slider__txt2 {
+        display: block;
+        bottom: 3px;
+        font-size: 17px;
+      }
+     
+      
+        .comida__img{
+            width: 400px;
+           
+        }
+         .especial__columna1,.especial__columna2,.especial__columna3{
+            width: 90%;
+        }
+        
+    }
+    @media(min-width:768px){
+            #btn-prev,#btn-next
+        {
+            display: block;
+        }
+           .banner__descripcion {
+             top: 50%;
+           
+    }
+         .banner__descripcion h1 {    
+            font-size: 42px;
+    }
+        .banner__descripcion p {
+            font-size: 18px;
+    }
+        .slider__txt2 {
+          font-size: 25px;
+            padding: 20px;
+      }
+         .comida__columna{
+            width: 45%;
+        }
+        .especial__columna1,.especial__columna2{
+            width: 43%;
+        } 
+      
+         .sociales {
+            width: auto;
+            padding: 20px;
+        }
+        footer .contenedor {
+            justify-content: space-between;
+        }
+      
+    }
+    @media(min-width:1024px){
+         .contenedor{
+            width: 1000px;
+        }
+        .nav {
+        position: static;
+        width: auto;
+      }
+      .menu {
+        display: flex;
+      }
+      .icon-menu {
+        display: none;
+      }
+        .menu__link{
+            border: none;
+        } 
+          .banner__descripcion .contenedor{
+           width: 90%;
+        }
+        #btn-prev,#btn-next{
+        width: 60px;
+        height: 60px;
+        transform: translateY(-50%);
+       line-height: 50px;
+        font-size: 60px;
+        }
+        .banner__descripcion h1 {  
+            font-size: 68px; 
+        }
+        .banner__descripcion p {  
+            font-size: 28px; 
+    }
+        .slider__txt2 {
+          font-size: 32px;
+            padding: 25px;  
+      }
+        .comida__columna{
+            width: 25%; 
+        }
+        /*.titulo__destino{
+            font-size: 60px;
+        }*/
+        .especial__columna1,.especial__columna2,.especial__columna3{
+        width: 30%;
+        } 
+        
+        
+    }
+    @media(min-width:1280px){
+        .banner__descripcion {
+            padding: 50px;
+             width: 1200px;
+        }
+        .contenedor{
+            width: 1200px;
+      
+     }  }
+     /*****************************carousel*****************************************/
+     .carrusel{
+        width: 95%;
+        margin: auto;
+        overflow: hidden;
+      }
+      
+      .carrusel ul{
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: cambio 20s infinite alternate linear;
+      }
+      
+      .carrusel li{
+        width: 100%;
+        list-style: none;
+        text-align: center;
+      }
+      
+      .carrusel img{
+        width: 1000px;
+        height: 400px;
+      }
+      
+      @keyframes cambio{
+        0%{ margin-left: 0; }
+        20%{ margin-left: 0; }
+      
+        25%{ margin-left: -100%; }
+        45%{ margin-left: -100%; }
+      
+        50%{ margin-left: -200%; }
+        70%{ margin-left: -200%; }
+      
+        75%{ margin-left: -300%; }
+        100%{ margin-left: -300%; }
+      }
+      
+    
+    
+    
+     
+    /******************************barra de redes sociales***********************************/
+    .red{
+        position: fixed;
+        top: 200px;
+        z-index: 100;
+        left: 0;
+    }
+    #facebook a{
+        background: #3b5998;
+        padding: 10px 25px;
+        color: #fff;
+        text-decoration: none;
+        width: 55px;
+        transition: all .4s ease;
+    }
+    #facebook a:hover{
+        background: #000;
+        padding: 10px 50px;
+    }
+    #youtube a{
+        background: #bb0000;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        width: 55px;
+        transition: all .4s ease;
+    }
+    #youtube a:hover{
+        background: #000;
+        padding: 10px 50px;
+    }
+    #twitter a{
+        background: #55acee;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        width: 55px;
+        transition: all .4s ease;
+    }
+    #twitter a:hover{
+        background: #000;
+        padding: 10px 50px;
+    }
+    #correo a{
+        background: #e95950;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        width: 55px;
+        transition: all .4s ease;
+    }
+    #correo a:hover{
+        background: #000;
+        padding: 10px 50px;
+    }
+    /**********************************LOADER***************************************/
+    #preloader{
+        position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: #000;
+         z-index: 1000;
+     }
+     
+     #loader{
+         width: 100px;
+         height: 100px;
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         margin: -50px 0 0 -50px;
+         background: black;
+     }
+    
+    
+    
+    /****************************galeria de fotos**************/
+     
+    main .galeria{
+        background:black;
+        padding: 60px 0;
+    }
+    
+    main .galeria .galeria_texto{
+        text-align: center;
+        margin-bottom: 60px;
+        color:#dfe3eb;
+        font-size: 20px;
+    }
+    
+    main .galeria .galeria_texto p{
+        color: #909090;
+        font-size: 15px;
+        margin:20px 0 0 0;
+    }
+    
+    main .galeria .galeria1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    main .galeria  .galeria1 .fotos{
+        width: 30%;
+        margin-bottom:20px;
+    }
+    
+    main .galeria .galeria1 .fotos img{
+        width: 100%;
+        height:210px;
+        border-radius: 5px;
+    }
+    main .galeria  .galeria1 .fotos img:hover{
+        opacity:.6;
+        cursor: pointer;
+    }
+   
+
+
+    

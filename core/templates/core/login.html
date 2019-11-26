@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+
+
+
+<head>
+  
+    <meta charset="UTF-8">
+    <title>Restaurant Pop Sushi</title>
+ <link rel="stylesheet" type="text/css"  href="{% static 'css/formulario.css'  %}"> 
+
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+    
+</head>
+<body>
+
+
+ <footer>
+            <section class="contacto" id="formulario">
+                <form action="" class="formulario" method="POST" >
+                    <h2>CONTACTO</h2>
+                   
+                     <form method="POST">
+                     {% csrf_token %}
+
+                     {{ form.as_p }}
+       
+                
+             
+                   <button type="submit">Login</button>
+              
+                 <hr />
+
+               <a href="/register">Registrar usuario</a>
+           
+                
+    </form>
+
+
+            </section>
+        </footer>
+
+
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  
+    <meta charset="UTF-8">
+    <title>Restaurant Pop Sushi</title>
+ <link rel="stylesheet" type="text/css"  href="{% static 'css/formulario.css'  %}"> 
+
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+    
+</head>
+<body>
+    {% block contenido %}
+    
+    <section class="contacto" id="formulario">
+  <form action="" method ="POST" enctype ="multipart/form-data">
+                    {% csrf_token %}
+                        <label for"">rut</label>
+                        <input type="text" name="txtrut" id="txtrut">
+                        <br>
+                        <label for="">nombre</label>
+                        <input type="text" name="txtnombre" id="txtnombre">
+                        <br>
+                        <label for="">apellido paterno</label>
+                        <input type="text" name="txtapaterno" id="txtapaterno">
+                        <br>
+                        <label for="">apellido materno</label>
+                        <input type="text" name="txtamaterno" id="txtamaterno">
+                        <br>
+                        <label for="">telefono</label>
+                        <input type="text" name="txttelefono" id="txttelefono">
+                        <br>
+                        <label for="">fecha de nacimiento</label>
+                        <input type="text" name="txtfechnac" id="txtfechnac">
+                        <br>
+                        <label for="">email</label>
+                        <input type="text" name="txtemailuser" id="txtemailuser">
+                        <br>
+                        <label for="">Imagen</label>
+                        <input type="text" name="txtfoto" id="txtfoto">
+
+                        
+                       <div class="derecha">
+                        <input class="boton derecha" type="submit" value="Guardar" name="submmit">
+                        </div>
+                
+    <form/> 
+    <section/>
+
+    
+   
+ {% endblock contenido %}
+ </html>
+
+
+
+
+
+</body>
+
